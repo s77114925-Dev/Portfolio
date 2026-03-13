@@ -27,6 +27,7 @@ interface Project {
   features: string[];
   impact: string;
   workflow: WorkflowStep[];
+  videoSrc?: string;
 }
 
 /* ─── Data ───────────────────────────────────────────────── */
@@ -118,6 +119,7 @@ const projects: Project[] = [
       { icon: CheckCircle2,  title: "Validation Checks",  description: "Automated validation ensures accuracy." },
       { icon: Package,       title: "Structured Output",  description: "Clean datasets prepared for analysis and reporting." },
     ],
+    videoSrc: `${import.meta.env.BASE_URL}videos/automated-data-processing-demo.mp4`,
   },
 ];
 
