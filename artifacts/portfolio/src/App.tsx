@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Menu, X, TerminalSquare } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Section Components
@@ -64,11 +64,62 @@ function PortfolioLayout() {
       
       {/* Header (Fixed) */}
       <header className="h-20 shrink-0 border-b border-border/40 glass-panel z-50 flex items-center justify-between px-6 md:px-10">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center border border-primary/20">
-            <TerminalSquare className="w-5 h-5 text-primary" />
+        <div
+          className="flex items-center gap-3 cursor-pointer group"
+          onClick={() => handleNavClick("Home")}
+          style={{ filter: "none", transition: "filter 0.2s ease" }}
+          onMouseEnter={e => (e.currentTarget.style.filter = "brightness(1.15) drop-shadow(0 0 8px rgba(0,114,255,0.5))")}
+          onMouseLeave={e => (e.currentTarget.style.filter = "none")}
+        >
+          {/* Square icon with gradient */}
+          <div
+            style={{
+              width: 38,
+              height: 38,
+              borderRadius: 10,
+              background: "linear-gradient(135deg, #00C6FF 0%, #0072FF 100%)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexShrink: 0,
+            }}
+          >
+            <span
+              style={{
+                color: "#fff",
+                fontWeight: 800,
+                fontSize: 22,
+                fontFamily: "'Poppins', 'Inter', sans-serif",
+                lineHeight: 1,
+                letterSpacing: "-0.5px",
+              }}
+            >
+              S
+            </span>
           </div>
-          <span className="font-display font-bold text-xl tracking-tight">AM<span className="text-primary">.dev</span></span>
+
+          {/* Brand text */}
+          <span
+            style={{
+              fontFamily: "'Poppins', 'Inter', sans-serif",
+              fontWeight: 700,
+              fontSize: 20,
+              letterSpacing: "-0.5px",
+              lineHeight: 1,
+            }}
+          >
+            <span style={{ color: "#ffffff" }}>Sai</span>
+            <span
+              style={{
+                background: "linear-gradient(135deg, #00C6FF 0%, #0072FF 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              .dev
+            </span>
+          </span>
         </div>
         
         {/* Mobile Menu Toggle */}
