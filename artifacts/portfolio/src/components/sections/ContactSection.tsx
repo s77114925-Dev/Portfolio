@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, Linkedin, Github, Send, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github, Send, CheckCircle2, Download } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -90,14 +90,33 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="mt-12 pt-8 border-t border-border/50">
-              <h4 className="text-lg font-medium mb-4">Connect on Social</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                  <Github className="w-5 h-5" />
+            <div className="mt-12 pt-8 border-t border-border/50 space-y-6">
+              <div>
+                <h4 className="text-lg font-medium mb-4">Connect on Social</h4>
+                <div className="flex space-x-4">
+                  <a href="#" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a href="#" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <Github className="w-5 h-5" />
+                  </a>
+                </div>
+              </div>
+
+              {/* Download Resume */}
+              <div>
+                <h4 className="text-lg font-medium mb-3">My Resume</h4>
+                <a
+                  href="#"
+                  download
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm text-white transition-all duration-200 hover:brightness-110 hover:shadow-lg"
+                  style={{
+                    background: "linear-gradient(135deg, #00C6FF 0%, #0072FF 100%)",
+                    boxShadow: "0 4px 14px rgba(0,114,255,0.3)",
+                  }}
+                >
+                  <Download className="w-4 h-4" />
+                  Download Resume
                 </a>
               </div>
             </div>
