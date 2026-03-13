@@ -51,7 +51,7 @@ export default function HomeSection({ navigateTo }: HomeSectionProps) {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-base md:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          I help organizations convert manual spreadsheet processes into efficient automated workflows using Excel, Python, and AI-powered solutions — improving accuracy, reducing effort, and accelerating decision-making.
+          I analyze operational data, manage reporting workflows, and optimize business processes using Excel, analytics tools, and automation techniques — improving accuracy, efficiency, and data-driven decision-making.
         </motion.p>
 
         <motion.div
