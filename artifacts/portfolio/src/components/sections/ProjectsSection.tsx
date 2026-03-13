@@ -6,32 +6,32 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Excel Financial Reporting Suite",
-    description: "A fully automated end-to-end reporting suite built in VBA and Power Query that consolidates data from 5 different ERP systems into a clean, interactive dashboard.",
-    tags: ["Excel", "VBA", "Power Query", "Finance"],
-    image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80", // spreadsheet graph abstract
-    metric: "Saved 40 hrs/month"
+    title: "Vendor Portal Data Extraction Automation",
+    description: "Developed an automated workflow to extract operational data from a vendor management portal and structure it for reporting and analysis. The automation reduced manual data collection effort and improved data availability for operational reporting.",
+    tags: ["Python", "Data Extraction", "Automation"],
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+    metric: "Automated data collection workflow"
   },
   {
-    title: "Python E-Commerce Scraper Pipeline",
-    description: "Automated daily web scraping script to monitor competitor pricing, analyze trends using Pandas, and send alert emails for price drops.",
-    tags: ["Python", "Selenium", "Pandas", "SMTP"],
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80", // code on screen
-    metric: "10k+ rows processed daily"
+    title: "Excel Workflow Automation for Transfer Processing",
+    description: "Designed an Excel-based automation workflow to streamline internal transfer processing tasks. Implemented VBA logic to validate records, organize data, and reduce repetitive manual operations.",
+    tags: ["Excel", "VBA", "Process Automation"],
+    image: "https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&q=80",
+    metric: "Reduced manual processing effort"
   },
   {
-    title: "AI Customer Support Classifier",
-    description: "Integrated OpenAI's API into an existing Zendesk workflow to automatically tag, prioritize, and draft initial responses for incoming support tickets.",
-    tags: ["Python", "OpenAI API", "Zendesk", "NLP"],
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80", // AI tech aesthetic
-    metric: "Reduced response time by 60%"
+    title: "Operational Data Reporting Automation",
+    description: "Built structured reporting workflows for operational datasets, enabling faster preparation of MIS reports and improving visibility into key operational metrics.",
+    tags: ["Excel", "Data Analysis", "MIS Reporting"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    metric: "Improved reporting efficiency"
   },
   {
-    title: "Interactive Sales Dashboard",
-    description: "Built a dynamic PowerBI dashboard directly connected to a live SQL database, featuring real-time drill-downs, predictive forecasting, and automated PDF exports.",
-    tags: ["PowerBI", "SQL", "DAX", "Data Viz"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80", // data visualization screens
-    metric: "$2M revenue unlocked"
+    title: "Automated Data Processing Scripts",
+    description: "Developed Python scripts to process large operational datasets, perform validation checks, and generate structured outputs used for internal reporting and analytics.",
+    tags: ["Python", "Data Processing", "Automation"],
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
+    metric: "Handled high-volume operational data"
   }
 ];
 
@@ -44,10 +44,10 @@ export default function ProjectsSection() {
         className="mb-12 flex justify-between items-end"
       >
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured <span className="text-primary">Projects</span></h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Operational Data &amp; <span className="text-primary">Automation Work</span></h2>
           <div className="w-20 h-1.5 bg-primary rounded-full mb-4"></div>
           <p className="text-muted-foreground max-w-2xl text-lg">
-            Real-world solutions that solved real-world problems.
+            Practical automation and data workflow solutions built to improve operational efficiency and reporting.
           </p>
         </div>
       </motion.div>
