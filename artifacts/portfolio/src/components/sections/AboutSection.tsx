@@ -52,24 +52,24 @@ export default function AboutSection() {
           animate="show"
         >
           <motion.p variants={item} className="text-lg text-muted-foreground leading-relaxed">
-            I am a passionate <strong className="text-foreground">Automation & Data Analysis Specialist</strong> with over 5 years of experience streamlining business processes. I bridge the gap between complex technical solutions and tangible business value.
+            I am an <strong className="text-foreground">Operations and Data Analytics professional</strong> with experience in healthcare operations, MIS reporting, and workflow optimization. I work with operational data to track KPIs, prepare reports, and support decision-making through structured analysis.
           </motion.p>
           
           <motion.p variants={item} className="text-lg text-muted-foreground leading-relaxed">
-            My journey started with advanced Excel modeling and VBA macros, eventually evolving into robust Python pipelines and AI-assisted automation workflows. I believe that repetitive tasks are meant for machines, allowing human talent to focus on strategy and creativity.
+            My focus is on improving reporting accuracy, optimizing processes, and turning operational data into meaningful insights using Excel and analytics tools.
           </motion.p>
 
           <motion.div variants={item} className="grid sm:grid-cols-2 gap-6 pt-6">
             <div className="glass-panel p-6 rounded-2xl border border-border/50">
               <Database className="w-8 h-8 text-primary mb-4" />
-              <h3 className="font-bold text-xl mb-2 text-foreground">Data Engineering</h3>
-              <p className="text-sm text-muted-foreground">Transforming messy datasets into structured, analytical goldmines.</p>
+              <h3 className="font-bold text-xl mb-2 text-foreground">MIS Reporting &amp; Data Analysis</h3>
+              <p className="text-sm text-muted-foreground">Working with operational data to track KPIs, validate datasets, and generate structured MIS reports that support business and operational decision-making.</p>
             </div>
             
             <div className="glass-panel p-6 rounded-2xl border border-border/50">
               <Terminal className="w-8 h-8 text-accent mb-4" />
-              <h3 className="font-bold text-xl mb-2 text-foreground">Process Automation</h3>
-              <p className="text-sm text-muted-foreground">Replacing manual 10-hour tasks with 10-second automated scripts.</p>
+              <h3 className="font-bold text-xl mb-2 text-foreground">Operational Process Optimization</h3>
+              <p className="text-sm text-muted-foreground">Improving operational workflows by organizing data, streamlining reporting processes, and ensuring accuracy across systems and cross-functional teams.</p>
             </div>
           </motion.div>
 
@@ -79,7 +79,7 @@ export default function AboutSection() {
               Work Philosophy
             </h3>
             <blockquote className="italic text-muted-foreground border-l-4 border-primary pl-4 py-2">
-              "Efficiency isn't just about doing things faster; it's about eliminating the friction that prevents people from doing their best work."
+              "Operational efficiency begins with accurate data, structured processes, and meaningful insights."
             </blockquote>
           </motion.div>
         </motion.div>
