@@ -32,7 +32,7 @@ interface Project {
 /* ─── Data ───────────────────────────────────────────────── */
 const projects: Project[] = [
   {
-    title: "Vendor Portal Data Extraction Automation",
+    title: "Automated Data Extraction & Processing Pipeline",
     description:
       "Developed an automated workflow to extract operational data from a vendor management portal and structure it for reporting and analysis. The automation reduced manual data collection effort and improved data availability for operational reporting.",
     tags: ["Python", "Data Extraction", "Automation"],
@@ -54,7 +54,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Excel Workflow Automation for Transfer Processing",
+    title: "Excel Workflow Automation System",
     description:
       "Designed an Excel-based automation workflow to streamline internal transfer processing tasks. Implemented VBA logic to validate records, organize data, and reduce repetitive manual operations.",
     tags: ["Excel", "VBA", "Process Automation"],
@@ -76,7 +76,7 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Operational Data Reporting Automation",
+    title: "Operational Reporting Automation",
     description:
       "Built structured reporting workflows for operational datasets, enabling faster preparation of MIS reports and improving visibility into key operational metrics.",
     tags: ["Excel", "Data Analysis", "MIS Reporting"],
