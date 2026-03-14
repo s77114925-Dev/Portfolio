@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Terminal, Database, Lightbulb } from "lucide-react";
+import profilePhoto from "@/assets/profile-yaswanth.jpeg";
 
 export default function AboutSection() {
   const container = {
@@ -27,22 +28,40 @@ export default function AboutSection() {
       </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        <motion.div 
-          className="lg:col-span-5 relative"
+        <motion.div
+          className="lg:col-span-5 relative flex items-center justify-center"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="aspect-square rounded-3xl overflow-hidden border-2 border-border relative group">
-            <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
-            <img 
-              src={`${import.meta.env.BASE_URL}images/avatar.png`} 
-              alt="Alex Morgan" 
-              className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500"
-            />
+          {/* Glow blobs */}
+          <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-accent/20 blur-3xl rounded-full -z-10" />
+          <div className="absolute -top-10 -left-10 w-48 h-48 bg-primary/20 blur-3xl rounded-full -z-10" />
+
+          {/* Gradient ring wrapper */}
+          <div
+            className="p-[3px] rounded-full"
+            style={{
+              background: "linear-gradient(135deg, #00C6FF 0%, #0072FF 60%, #7B5EA7 100%)",
+              boxShadow: "0 0 40px rgba(0, 114, 255, 0.35)",
+            }}
+          >
+            <div className="p-1 rounded-full bg-background">
+              <img
+                src={profilePhoto}
+                alt="Yaswanth Sai"
+                className="rounded-full object-cover object-top"
+                style={{
+                  width: 260,
+                  height: 260,
+                  objectFit: "cover",
+                  objectPosition: "center top",
+                  boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
+                  display: "block",
+                }}
+              />
+            </div>
           </div>
-          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 blur-3xl rounded-full -z-10" />
-          <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/20 blur-3xl rounded-full -z-10" />
         </motion.div>
 
         <motion.div 
