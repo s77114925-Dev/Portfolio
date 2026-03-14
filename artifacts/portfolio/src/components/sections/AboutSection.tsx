@@ -38,28 +38,101 @@ export default function AboutSection() {
           <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-accent/20 blur-3xl rounded-full -z-10" />
           <div className="absolute -top-10 -left-10 w-48 h-48 bg-primary/20 blur-3xl rounded-full -z-10" />
 
-          {/* Gradient ring wrapper */}
+          {/* Gradient ring + flip card */}
           <div
-            className="p-[3px] rounded-full"
             style={{
               background: "linear-gradient(135deg, #00C6FF 0%, #0072FF 60%, #7B5EA7 100%)",
               boxShadow: "0 0 40px rgba(0, 114, 255, 0.35)",
+              borderRadius: "50%",
+              padding: 3,
             }}
           >
-            <div className="p-1 rounded-full bg-background">
-              <img
-                src={profilePhoto}
-                alt="Yaswanth Sai"
-                className="rounded-full object-cover object-top"
-                style={{
-                  width: 260,
-                  height: 260,
-                  objectFit: "cover",
-                  objectPosition: "center top",
-                  boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
-                  display: "block",
-                }}
-              />
+            <div style={{ padding: 4, borderRadius: "50%", background: "hsl(var(--background))" }}>
+              {/* Flip card container */}
+              <div
+                className="group"
+                style={{ width: 260, height: 260, perspective: "1000px" }}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "100%",
+                    transition: "transform 0.8s",
+                    transformStyle: "preserve-3d",
+                  }}
+                  className="group-hover:[transform:rotateY(180deg)]"
+                >
+                  {/* Front — profile photo */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      borderRadius: "50%",
+                      overflow: "hidden",
+                      backfaceVisibility: "hidden",
+                      WebkitBackfaceVisibility: "hidden",
+                    }}
+                  >
+                    <img
+                      src={profilePhoto}
+                      alt="Yaswanth Sai"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center top",
+                        display: "block",
+                      }}
+                    />
+                  </div>
+
+                  {/* Back — name */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      borderRadius: "50%",
+                      background: "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      backfaceVisibility: "hidden",
+                      WebkitBackfaceVisibility: "hidden",
+                      transform: "rotateY(180deg)",
+                      boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: 20,
+                        fontWeight: 700,
+                        color: "#ffffff",
+                        letterSpacing: "-0.3px",
+                        textAlign: "center",
+                        lineHeight: 1.3,
+                      }}
+                    >
+                      Yaswanth Sai
+                    </span>
+                    <span
+                      style={{
+                        fontSize: 12,
+                        fontWeight: 400,
+                        marginTop: 8,
+                        background: "linear-gradient(135deg, #00C6FF 0%, #0072FF 100%)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        backgroundClip: "text",
+                        letterSpacing: "0.5px",
+                      }}
+                    >
+                      Operations & Data Analytics
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
