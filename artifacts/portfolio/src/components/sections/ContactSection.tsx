@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, MapPin, Linkedin, Github, Send, CheckCircle2, Download } from "lucide-react";
+import { Mail, MapPin, Linkedin, Send, CheckCircle2, Download } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name is required"),
@@ -74,7 +74,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Email</p>
-                    <a href="mailto:hello@alexmorgan.dev" className="text-lg font-medium hover:text-primary transition-colors">hello@alexmorgan.dev</a>
+                    <a href="mailto:s77114925@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." className="text-lg font-medium hover:text-primary transition-colors">s77114925@gmail.com</a>
                   </div>
                 </div>
                 
@@ -94,11 +94,11 @@ export default function ContactSection() {
               <div>
                 <h4 className="text-lg font-medium mb-4">Connect on Social</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                  <a href="https://www.linkedin.com/in/yaswanth-sai-lalam-4969b236a" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
                     <Linkedin className="w-5 h-5" />
                   </a>
-                  <a href="#" className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                    <Github className="w-5 h-5" />
+                  <a href="mailto:s77114925@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect." className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                    <Mail className="w-5 h-5" />
                   </a>
                 </div>
               </div>

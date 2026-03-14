@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Menu, X, Linkedin, Github, Mail } from "lucide-react";
+import { Menu, X, Linkedin, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Section Components
@@ -130,7 +130,7 @@ function PortfolioLayout() {
             {/* Social icons (hidden on mobile) */}
             <div className="hidden md:flex items-center gap-1">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/yaswanth-sai-lalam-4969b236a"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
@@ -139,16 +139,7 @@ function PortfolioLayout() {
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
-                title="GitHub"
-              >
-                <Github className="w-4 h-4" />
-              </a>
-              <a
-                href="mailto:hello@insightflow.dev"
+                href="mailto:s77114925@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
                 className="w-8 h-8 rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-200"
                 title="Email"
               >
@@ -223,15 +214,11 @@ function PortfolioLayout() {
               ))}
               {/* Mobile social row */}
               <div className="flex items-center gap-3 px-4 pt-3 border-t border-border/40 mt-2">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.linkedin.com/in/yaswanth-sai-lalam-4969b236a" target="_blank" rel="noopener noreferrer"
                    className="w-9 h-9 rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all">
                   <Linkedin className="w-4 h-4" />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
-                   className="w-9 h-9 rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all">
-                  <Github className="w-4 h-4" />
-                </a>
-                <a href="mailto:hello@insightflow.dev"
+                <a href="mailto:s77114925@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
                    className="w-9 h-9 rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all">
                   <Mail className="w-4 h-4" />
                 </a>
@@ -268,7 +255,7 @@ function PortfolioLayout() {
         <p>© {new Date().getFullYear()} InsightFlow. All rights reserved.</p>
         <div className="flex gap-4">
           <button onClick={() => handleNavClick("Contact")} className="hover:text-primary transition-colors">Contact</button>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/yaswanth-sai-lalam-4969b236a" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">LinkedIn</a>
         </div>
       </footer>
 
