@@ -1,4 +1,5 @@
 import { useState } from "react";
+import demoVideoUrl from "@/assets/automated-data-processing-demo.mp4";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -119,7 +120,7 @@ const projects: Project[] = [
       { icon: CheckCircle2,  title: "Validation Checks",  description: "Automated validation ensures accuracy." },
       { icon: Package,       title: "Structured Output",  description: "Clean datasets prepared for analysis and reporting." },
     ],
-    videoSrc: `${import.meta.env.BASE_URL}videos/automated-data-processing-demo.mp4`,
+    videoSrc: demoVideoUrl,
   },
 ];
 
