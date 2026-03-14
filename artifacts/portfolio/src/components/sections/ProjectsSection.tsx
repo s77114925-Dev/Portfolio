@@ -249,6 +249,31 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
               </h4>
               <p className="text-sm text-muted-foreground leading-relaxed">{project.impact}</p>
             </div>
+
+            {/* Project Demonstration — only for projects that have a video */}
+            {project.videoSrc && (
+              <div>
+                <h4 className="text-lg font-bold text-foreground mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-5 rounded-full bg-primary inline-block" />
+                  Project Demonstration
+                </h4>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  This demonstration shows how automated scripts process large operational datasets,
+                  perform validation checks, and generate structured outputs for reporting and analysis.
+                </p>
+                <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
+                  Demo Video
+                </p>
+                <video
+                  controls
+                  className="w-full rounded-2xl shadow-lg shadow-black/40 bg-black"
+                  style={{ maxWidth: "100%" }}
+                >
+                  <source src={project.videoSrc} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            )}
           </div>
         </motion.div>
       </motion.div>
