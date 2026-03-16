@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-import { ClipboardList, BarChart2, Wrench, Monitor } from "lucide-react";
+import { ClipboardList, BarChart2, Wrench, Monitor, Bot } from "lucide-react";
 
 const skillCategories = [
   {
@@ -8,12 +8,18 @@ const skillCategories = [
     icon: ClipboardList,
     color: "text-primary",
     skills: [
+      "Escalation Resolution",
+      "Grievance Management",
+      "Process Mapping",
       "Process Tracking",
-      "Workflow Optimization",
-      "SOP Documentation",
-      "Service Coordination",
-      "Escalation Handling",
       "Quality Assurance",
+      "Claims Adjudication",
+      "Service Coordination",
+      "SOP Documentation",
+      "SOP Development",
+      "Service Delivery",
+      "Workflow Optimisation",
+      "Appointment Scheduling",
     ],
   },
   {
@@ -21,17 +27,19 @@ const skillCategories = [
     icon: BarChart2,
     color: "text-accent",
     skills: [
-      "MIS Reporting",
-      "KPI Monitoring",
+      "Data Analysis with Python",
+      "Data Tracking",
+      "Data Testing",
       "Data Validation",
-      "Data Analysis",
+      "Data-driven Insights",
+      "KPI Monitoring",
+      "MIS Reporting",
       "Reporting & Dashboards",
       "Trend Analysis",
-      "Operational Data Tracking",
     ],
   },
   {
-    title: "Technical Tools",
+    title: "Technical Tools & Software",
     icon: Wrench,
     color: "text-primary",
     skills: [
@@ -40,19 +48,38 @@ const skillCategories = [
       "Power BI",
       "SQL",
       "Python",
-      "Business Intelligence Tools",
+      "CRM Systems",
+      "Zoho Projects",
+      "Zoho Ticketing Systems",
+      "Ticketing Platforms",
+      "Business Intelligence Software",
     ],
   },
   {
-    title: "Systems & Platforms",
+    title: "Healthcare Domain Expertise",
     icon: Monitor,
     color: "text-accent",
     skills: [
-      "CRM Systems",
-      "Zoho Projects",
-      "Ticketing Platforms",
+      "Cashless Authorisation",
+      "Clinical Support Services",
       "HIS / EMR Systems",
-      "Healthcare Data Systems",
+      "Healthcare Operations",
+      "Insurance Claims Processing",
+      "Prescription & Lab Test Management",
+      "Provider Network Coordination",
+      "TPA Coordination",
+    ],
+  },
+  {
+    title: "AI Tools",
+    icon: Bot,
+    color: "text-primary",
+    skills: [
+      "ChatGPT",
+      "GitHub Copilot",
+      "AI Model Training & Validation",
+      "AI Data Quality Assurance",
+      "Prompt Engineering",
     ],
   },
 ];
@@ -70,7 +97,7 @@ export default function SkillsSection() {
         </h2>
         <div className="w-20 h-1.5 bg-primary rounded-full mb-8"></div>
         <p className="text-muted-foreground max-w-2xl text-lg">
-          A structured overview of my skills across operations, data analysis, technical tools, and the platforms I work with.
+          A structured overview of my skills across operations, data analysis, technical tools, healthcare domain expertise, and AI tools.
         </p>
       </motion.div>
 

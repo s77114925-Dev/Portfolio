@@ -106,10 +106,10 @@ export default function ContactSection() {
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Email</p>
                     <a
-                      href="mailto:s77114925@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
+                      href="mailto:yaswanthsailalam02@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
                       className="text-lg font-medium hover:text-primary transition-colors"
                     >
-                      s77114925@gmail.com
+                      yaswanthsailalam02@gmail.com
                     </a>
                   </div>
                 </div>
@@ -176,7 +176,7 @@ export default function ContactSection() {
                     <MessageCircle className="w-5 h-5" />
                   </a>
                   <a
-                    href="mailto:s77114925@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
+                    href="mailto:yaswanthsailalam02@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Yaswanth%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
                     className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                   >
                     <Mail className="w-5 h-5" />
