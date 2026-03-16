@@ -13,6 +13,7 @@ import ProjectsSection from "./components/sections/ProjectsSection";
 import AutomationSection from "./components/sections/AutomationSection";
 import InsightsSection from "./components/sections/InsightsSection";
 import ContactSection from "./components/sections/ContactSection";
+import ResumeSection from "./components/sections/ResumeSection";
 
 const queryClient = new QueryClient();
 
