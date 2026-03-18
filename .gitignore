@@ -47,3 +47,7 @@ Thumbs.db
 # Replit
 .cache/
 .local/
+
+# Error logs
+*_error.txt
+pnpm_install_log.txt
